@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contenedor principal de tipo LinearLayout con orientación vertical -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- Botón que se usa para añadir un nuevo lugar  -->
+    <Button
+        android:id="@+id/btnAddPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_place" />
+    <!-- RecyclerView que se utiliza para mostrar una gran cantidad de elementos en una lista o grilla. -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPlacesList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

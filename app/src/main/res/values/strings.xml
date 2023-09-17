@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Planificador de Vacaciones</string>
+    <string name="view_place">Ver Lugar</string>
+    <string name="hint_longitude">Ingresa la longitud</string>
+    <string name="hint_latitude">Ingresa la latitud</string>
+    <string name="edit_place">Editar Lugar</string>
+    <string name="add_place">Agregar Lugar</string>
+    <string name="accomodation_cost_hint">Ingrese el costo de Alojamiento</string>
+    <string name="transport_cost_hint">Introduce el costo de transporte</string>
+    <string name="button_save">Guardar</string>
+
+
+</resources>

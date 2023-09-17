@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView asegura que todos los contenidos, incluso si superan la altura de la pantalla, puedan ser accesibles desplazándose -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <!-- LinearLayout organiza los elementos en una única columna -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <!-- Campo para ingresar el nombre del lugar -->
+        <EditText
+            android:id="@+id/etPlaceName"
+            android:hint="Nombre del lugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp" />
+        <!-- Campo para ingresar el nombre del lugar -->
+        <EditText
+            android:id="@+id/etVisitOrder"
+            android:hint="Orden de visita"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp" />
+        <!-- Campo para ingresar la URL de una imagen del lugar -->
+        <EditText
+            android:id="@+id/etImageUrl"
+            android:hint="URL de la imagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp" />
+        <!-- Campo para ingresar la longitud del lugar -->
+        <EditText
+            android:id="@+id/etLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_longitude"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+        <!-- Campo para ingresar la latitud del lugar -->
+        <EditText
+            android:id="@+id/etLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_latitude"/>
+        <!-- Campo multilínea para ingresar comentarios sobre el lugar -->
+        <EditText
+            android:id="@+id/etComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comentarios" />
+        <!-- Campo para ingresar el costo de alojamiento en el lugar -->
+        <EditText
+            android:id="@+id/etAccommodationCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese Costos de Alojamiento"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        <!-- Campo para ingresar el costo de transporte hacia/alrededor del lugar -->
+        <EditText
+            android:id="@+id/etTransportCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/transport_cost_hint"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+        <!-- Campo para ingresar el costo de transporte hacia/alrededor del lugar -->
+        <Button
+            android:id="@+id/btnSavePlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+        />
+
+    </LinearLayout>
+</ScrollView>

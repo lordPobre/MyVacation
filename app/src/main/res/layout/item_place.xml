@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <!-- Título o nombre del lugar -->
+    <ImageView
+        android:id="@+id/placeImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_image" />
+    <!-- Título o nombre del lugar -->
+    <TextView
+        android:id="@+id/placeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Lugar"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+    <!-- Orden en el que se visitará el lugar -->
+    <TextView
+        android:id="@+id/visitOrderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orden de Visita: 1"
+        android:textSize="14sp"
+        android:textColor="@android:color/black" />
+
+
+
+</LinearLayout>
